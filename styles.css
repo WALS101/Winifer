@@ -1,0 +1,91 @@
+/* Estilos generales del cuerpo */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('FONDO.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(248, 247, 244, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+/* Estilo de la imagen */
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.left img {
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+/* Estilo del texto a la derecha */
+.right {
+    flex: 2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333;
+}
+
+/* Título */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000; /* Títulos en color negro */
+    margin-bottom: 20px;
+    text-align: center; /* Centra el título */
+}
+
+/* Estilos para los párrafos */
+.paragraph {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Estilo para los textos destacados */
+.highlight {
+    font-weight: bold;
+    color: #d81b60;
+}
+
+/* Estilo de los botones */
+.buttons {
+    margin-top: 25px;
+}
+
+.buttons button {
+    padding: 12px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffc107;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #e0a800;
+}
