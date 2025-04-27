@@ -133,20 +133,3 @@ button:hover,
   background-position: center;
   background-repeat: no-repeat;
 }
-
-/* Ajustes para móviles */
-@media screen and (max-width: 600px) {
-  .book {
-    height: 100vh;
-    max-width: 100%;
-  }
-
-  .button-row {
-    flex-direction: column;
-  }
-
-  .button-row button {
-    width: 100%;
-  }
-}
-
