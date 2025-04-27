@@ -33,12 +33,12 @@
     height: 100%;
     padding: 2rem;
     transition: transform 0.5s ease, opacity 0.5s ease;
-    background: #111010;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
   }
   
   .page.active {
@@ -63,14 +63,6 @@
   button:hover,
   .button-link:hover {
     background-color: #ffa2a2;
-  }
-  
- 
-  #page1 .page-content {
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-    text-align: center;
   }
   
   /* Botón centrado (ubicación) */
@@ -100,13 +92,23 @@
   }
   
   /* Página 1 */
-#page1 {
+  #page1 {
     background-image: url('BEE2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: rgb(12, 11, 11);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  #page1 .page-content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-bottom: 2rem;
   }
   
   /* Página 2 */
@@ -133,4 +135,28 @@
     background-repeat: no-repeat;
   }
   
+  /* Ajustes para móviles */
+  @media screen and (max-width: 600px) {
+    .book {
+      height: 100vh;
+      max-width: 100%;
+    }
+  
+    .button-row {
+      flex-direction: column;
+    }
+  
+    .button-row button {
+      width: 100%;
+    }
+  
+    #page1 {
+      background-size: contain;
+      background-position: center top;
+    }
+  
+    #page1 .page-content {
+      padding-bottom: 1rem;
+    }
+  }
   
